@@ -1,0 +1,18 @@
+{
+  "collectionName": "components_image_images",
+  "info": {
+    "displayName": "IMAGE"
+  },
+  "options": {},
+  "attributes": {
+    "small": {
+      "type": "string"
+    },
+    "original": {
+      "type": "string"
+    },
+    "thumbnail": {
+      "type": "string"
+    }
+  }
+}

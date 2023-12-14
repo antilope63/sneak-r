@@ -1,0 +1,70 @@
+{
+  "kind": "collectionType",
+  "collectionName": "sneakers",
+  "info": {
+    "singularName": "sneaker",
+    "pluralName": "sneakers",
+    "displayName": "sneaker",
+    "description": ""
+  },
+  "options": {
+    "draftAndPublish": true
+  },
+  "pluginOptions": {},
+  "attributes": {
+    "brand": {
+      "type": "string"
+    },
+    "colorway": {
+      "type": "string"
+    },
+    "estimatedMarketValue": {
+      "type": "integer"
+    },
+    "gender": {
+      "type": "string"
+    },
+    "links": {
+      "displayName": "links",
+      "type": "component",
+      "repeatable": false,
+      "component": "links.links"
+    },
+    "name": {
+      "type": "string"
+    },
+    "releaseDate": {
+      "type": "date"
+    },
+    "releaseYear": {
+      "type": "integer"
+    },
+    "retailPrice": {
+      "type": "integer"
+    },
+    "silhouette": {
+      "type": "string"
+    },
+    "sku": {
+      "type": "string"
+    },
+    "story": {
+      "type": "string"
+    },
+    "UID": {
+      "type": "string"
+    },
+    "image": {
+      "displayName": "IMAGE",
+      "type": "component",
+      "repeatable": false,
+      "component": "image.image"
+    },
+    "users": {
+      "type": "relation",
+      "relation": "manyToMany",
+      "target": "plugin::users-permissions.user",
+      "mappedBy": "wishlist"
+    }
+  }
+}
